@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkbox Shuffle</title>
+</head>
+<body>
+ <form id="checkboxForm">
+ <input type="checkbox" value="1" id="Internship">
+ <input type="checkbox" value="2" id="Pabau">
+ <input type="checkbox" value="3" id="Career">
+ <input type="checkbox" value="4" id="Employment">
+   <button id="shuffleButton">Shuffle values</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<script>
+window.onload = function() {
+var form = document.getElementByld('checkboxForm');
+var shuffleButton = document.getEkenebtByld('shuffleButton');
+
+shuffleButton.addEventListener('click', shuffleCheckboxes);
+
+checkbox inputs
+function shuffleCheckboxes() {
+var checkboxes = Array.from(form.getElementsByTagName('input'));
+var checkboxContainer = checkboxes (0).parentNode;
+
+{ return 0.5 - Math.random(); });
+checkboxContainer.innerHTML =";
+checkboxes.forEach(function(checkbox) {
+checkboxContainer.appendChild(checkbox);
+});
+}
+};
+</script
